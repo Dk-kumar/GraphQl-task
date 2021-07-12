@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { continentsDispatcher } from '../../store'
 import { Continents } from '.'
+import './continents.scss'
 
 export const StateToProps = (state) => ({
     apiData: state

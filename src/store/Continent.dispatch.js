@@ -17,6 +17,7 @@ export class continentsDispatcher {
                     capital
                     currency
                     emoji
+                    phone
                     languages {
                         name
                   }

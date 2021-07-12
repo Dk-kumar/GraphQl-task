@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+	font-size: 4rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family: "Josefin Sans", sans-serif;
+	background: linear-gradient(to right,#095fab 10%, #25abe8 50%, #57d75b 60%);
+	background-clip: border-box;
+	background-size: 200% auto;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: textclip 1.5s linear infinite;
+
+    @keyframes textclip {
+        to {
+            background-position: 200% ;
+        }
+    }
+}
+
+.dropdownBox {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    select.selectDropdown {
+        font-size: 1.1rem;
+        background: transparent;
+        width: 20%;
+        border-radius: 7px;
+        padding: 5px;
+        color: white;
+        outline: none;
+    
+        option#seleced-value {
+            color: black;
+        }
+    }
+}
+
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    table, th, td {
+        border-collapse: collapse;
+        padding: 8px;
+        table-layout: fixed;
+        width: 80%;
+        color: white;
+    
+        th {
+            text-align: left;
+            background-color: #55608f;
+            font-size: 1.4rem;
+        }
+    
+        tbody tr td {
+            background-color: rgba(255,255,255,0.2);
+        }
+
+        td.flagpic {
+            font-size: 1.5rem;
+        }
+    
+        tbody tr:hover {
+            background-color: rgba(255,255,255,0.2);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media(max-width:450px) {
+    
+
+}
+
+
+
+
+
+
+
