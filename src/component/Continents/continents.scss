@@ -1,6 +1,9 @@
+// @import '../../styles/mediaqueries.mixin.scss';
+
 body {
     margin: 0;
     background: linear-gradient(45deg, #49a09d, #5f2c82);
+    background-attachment: fixed;
 }
 
 h1 {
@@ -43,7 +46,6 @@ h1 {
     }
 }
 
-
 .table-container {
     display: flex;
     justify-content: center;
@@ -76,11 +78,6 @@ h1 {
             font-size: 1.2rem;
         }
     }
-}
-
-@media(max-width:450px) {
-    
-
 }
 
 
