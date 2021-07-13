@@ -1,9 +1,13 @@
-// @import '../../styles/mediaqueries.mixin.scss';
+@import '../../styles/mediaQueries.mixin.scss';
 
 body {
     margin: 0;
     background: linear-gradient(45deg, #49a09d, #5f2c82);
     background-attachment: fixed;
+
+    @include for-phone {
+        background-attachment: fixed;
+    }
 }
 
 h1 {
@@ -39,6 +43,7 @@ h1 {
         padding: 5px;
         color: white;
         outline: none;
+        box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
     
         option#seleced-value {
             color: black;
@@ -62,6 +67,35 @@ h1 {
             text-align: left;
             background-color: #55608f;
             font-size: 1.4rem;
+
+            @include for-phone {
+               font-size: 1rem; 
+            }
+
+            @include for-tablet {
+                font-size: 1rem;
+            }
+        }
+
+        @include for-phone {
+            width: 95%;
+            word-break: break-all;
+            .s-no, .code {
+                display: none;
+            } 
+        }
+
+        @include for-tablet {
+            width: 95%;
+            word-break: break-all;
+            .s-no {
+                display: none;
+            }
+        }
+
+        @include for-tablet-landscape {
+            width: 90%;
+            
         }
     
         tbody tr td {

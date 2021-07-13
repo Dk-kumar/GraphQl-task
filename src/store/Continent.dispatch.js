@@ -2,8 +2,9 @@ import { selectContinents } from '.'
 
 
 export class continentsDispatcher {
-
+    
     dispatchContinents(dispatch) {
+        
         fetch('https://countries.trevorblades.com/graphql', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -34,3 +35,6 @@ export class continentsDispatcher {
 }
 
 export default new continentsDispatcher()
+
+
+

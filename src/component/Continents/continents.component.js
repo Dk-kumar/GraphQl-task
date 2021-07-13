@@ -38,25 +38,25 @@ class Continents extends Component {
                 <table className='tableBox'>
                     <thead className='table-head'>
                         <tr>
-                            <th>S.No</th>
-                            <th>Countries</th>
-                            <th> Countries code </th>
-                            <th> Capital </th>
-                            <th> Currency </th>
-                            <th> Phone </th>
-                            <th> Flag </th>
+                            <th className='s-no'>S.No</th>
+                            <th className='countries'>Countries</th>
+                            <th className='code'>Code </th>
+                            <th className='capital'> Capital </th>
+                            <th className='currency'> Currency </th>
+                            <th className='phone'> Phone </th>
+                            <th className='flagpic'> Flag </th>
                         </tr>
                     </thead>
                     {countries[0].countries.map((data, i) => {
                         return (
                             <tbody className='table-body'>
                                 <tr key={i}>
-                                    <td>{i+1}</td>
-                                    <td>{data.name}</td>
-                                    <td>{data.code}</td>
-                                    <td>{data.capital}</td>
-                                    <td>{data.currency}</td>
-                                    <td>{data.phone}</td>
+                                    <td className='s-no'>{i+1}</td>
+                                    <td className='countries'>{data.name}</td>
+                                    <td className='code'>{data.code}</td>
+                                    <td className='capital'>{data.capital}</td>
+                                    <td className='currency'>{data.currency}</td>
+                                    <td className='phone'>{data.phone}</td>
                                     <td className='flagpic'>{data.emoji}</td>
                                 </tr>
                             </tbody>
