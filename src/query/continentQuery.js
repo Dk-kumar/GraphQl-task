@@ -1,5 +1,19 @@
 export const continentsData = `
-    {continents{code}}
-`
+query {
+    continents{
+        name
+        code
+        countries{
+            code
+            name
+            capital
+            currency
+            emoji
+            phone
+            languages {
+                name
+            }
+        }
+    }
+}`
 
-export default continentsData

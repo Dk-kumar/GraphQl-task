@@ -1,5 +1,5 @@
 import { selectContinents } from '.'
-
+import { continentsData } from '../query/continentQuery'
 
 export class continentsDispatcher {
     
@@ -9,21 +9,7 @@ export class continentsDispatcher {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                query: `{continents{
-                    name
-                    code
-                    countries{
-                    code
-                    name
-                    capital
-                    currency
-                    emoji
-                    phone
-                    languages {
-                        name
-                  }
-                }
-              }}`})
+                query: continentsData})
         })
             .then(response => response.json())
             .then(json => {
